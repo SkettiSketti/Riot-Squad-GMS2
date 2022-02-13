@@ -22,39 +22,20 @@ if (xDir != 0)
 	velX += image_xscale * spd;
 }
 
-//applyGravity(object_index,onTheGround,velY,grav) 
-
-if (!onTheGround)
-{
-	//apply gravity
-	velY += grav;
-}
-else 
-{
-	while place_meeting(x,y,oWall) y -= 1;
-	velY = 0;
-}
-
 
 //jump
 if (onTheGround && jump)
 {
+	y -= 1; //fixes bug where you need to be off the ground to jump
 	velY -= jumpHeight;
 }
 
 
-x += velX;
-
-y += velY;
 
 
-//Limit speed
-if (abs(velX) > maxSpd)
-velX = sign(velX) * maxSpd;
+event_inherited();
 
-//Limit speed
-if (abs(velY) > maxSpd)
-velY = sign(velY) * maxSpd;
+
 
 //Animate
 if (sprite_index == sBlueWhip)
@@ -75,26 +56,7 @@ else
 }
 
 
-velX += -velX * fric;
-
-
-//Threshold for when the player should just not move
-if (abs(velX) < 0.01)
-	velX = 0;
-
-if (instance_exists(weapon))
+if (dead)
 {
-	
-	if (weapon.image_index < 1)
-	{
-		weapon.x = x + 16 * - image_xscale;
-		weapon.y = y
-		weapon.image_xscale = image_xscale;
-	}
-	else if (weapon.image_index < 2)
-	{
-		weapon.x = x - 16 * - image_xscale
-		weapon.y = y
-		weapon.image_xscale = image_xscale;
-	}
+	sprite_index = sBlueDefeat
 }

@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 15,
-  "bbox_top": 0,
+  "bbox_top": 5,
   "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","path":"sprites/sBugIdle/sBugIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","path":"sprites/sBugIdle/sBugIdle.yy",},"LayerId":{"name":"c3fd0e1e-d55f-4b9a-ac0d-1f3f31033b9c","path":"sprites/sBugIdle/sBugIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},"resourceVersion":"1.0","name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a30b8735-b192-4224-a275-18b157c61265","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a30b8735-b192-4224-a275-18b157c61265","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},"LayerId":{"name":"3f2f4492-ad85-4466-a0df-828060827356","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBlueDefeat","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},"resourceVersion":"1.0","name":"a30b8735-b192-4224-a275-18b157c61265","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},
+    "spriteId": {"name":"sBlueDefeat","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 9.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ebaa9f32-765f-4ad6-8f15-10ff6497c36e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","path":"sprites/sBugIdle/sBugIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d4c1493a-8973-45af-8a30-25cc59ca9161","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a30b8735-b192-4224-a275-18b157c61265","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},
+    "parent": {"name":"sBlueDefeat","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},
     "resourceVersion": "1.3",
-    "name": "sBugIdle",
+    "name": "sBlueDefeat",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c3fd0e1e-d55f-4b9a-ac0d-1f3f31033b9c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3f2f4492-ad85-4466-a0df-828060827356","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBugIdle",
+  "name": "sBlueDefeat",
   "tags": [],
   "resourceType": "GMSprite",
 }

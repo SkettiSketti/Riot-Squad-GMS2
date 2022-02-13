@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","path":"sprites/sBugIdle/sBugIdle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","path":"sprites/sBugIdle/sBugIdle.yy",},"LayerId":{"name":"c3fd0e1e-d55f-4b9a-ac0d-1f3f31033b9c","path":"sprites/sBugIdle/sBugIdle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},"resourceVersion":"1.0","name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8aab0f2e-ce2d-4d92-a239-5b15f0d8ca28","path":"sprites/sWallIndicator/sWallIndicator.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8aab0f2e-ce2d-4d92-a239-5b15f0d8ca28","path":"sprites/sWallIndicator/sWallIndicator.yy",},"LayerId":{"name":"c4dd0ba2-3508-44f6-847f-099cb7f0a66b","path":"sprites/sWallIndicator/sWallIndicator.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sWallIndicator","path":"sprites/sWallIndicator/sWallIndicator.yy",},"resourceVersion":"1.0","name":"8aab0f2e-ce2d-4d92-a239-5b15f0d8ca28","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},
+    "spriteId": {"name":"sWallIndicator","path":"sprites/sWallIndicator/sWallIndicator.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 9.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ebaa9f32-765f-4ad6-8f15-10ff6497c36e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"40db1a6a-ed8b-4f7a-822c-823b061be77b","path":"sprites/sBugIdle/sBugIdle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"11d946ee-37cb-4b0e-85d2-4edf0316fcef","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8aab0f2e-ce2d-4d92-a239-5b15f0d8ca28","path":"sprites/sWallIndicator/sWallIndicator.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},
+    "parent": {"name":"sWallIndicator","path":"sprites/sWallIndicator/sWallIndicator.yy",},
     "resourceVersion": "1.3",
-    "name": "sBugIdle",
+    "name": "sWallIndicator",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c3fd0e1e-d55f-4b9a-ac0d-1f3f31033b9c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c4dd0ba2-3508-44f6-847f-099cb7f0a66b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBugIdle",
+  "name": "sWallIndicator",
   "tags": [],
   "resourceType": "GMSprite",
 }
