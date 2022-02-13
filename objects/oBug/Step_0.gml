@@ -1,7 +1,7 @@
 var onTheGround = place_meeting(x,y + 1, oWall);
 
 //move slower down
-if (!onTheGround && !dead)
+if (!onTheGround && !dead && !hurt)
 {
 	velY -= grav/3;
 	
@@ -47,13 +47,15 @@ event_inherited();
 //Within close proximity
 if (abs(oPlayer.x - x) < 16)
 {
-	/*
-	if (canWhip)
+	
+	if (canWhip && !dead)
 	{
 		canWhip = false
-		weapon = instance_create_layer(x,y,"Instances",oBaton);
+		sprite_index = sBugWhip;
+		weapon = instance_create_layer(x,y,"Instances",oPipe);
+		weapon.owner = id;
 	}
-	*/
+	
 }
 
 
@@ -61,6 +63,10 @@ if (abs(oPlayer.x - x) < 16)
 if (hurt)
 {
 	sprite_index = sBugHurt;
+}
+else if (sprite_index == sBugWhip)
+{
+	//do nothing
 }
 else if (!onTheGround)
 {

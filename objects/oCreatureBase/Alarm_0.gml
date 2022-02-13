@@ -1,0 +1,2 @@
+hurt = false;
+canWhip = true;

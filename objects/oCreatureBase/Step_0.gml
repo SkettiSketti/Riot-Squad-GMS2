@@ -7,7 +7,6 @@ if (hurt && onTheGround)
 	velY -= 1;
 }
 
-
 //applyGravity(object_index,onTheGround,velY,grav) 
 
 if (!onTheGround)
@@ -37,10 +36,15 @@ if (abs(velY) > maxSpd)
 velY = sign(velY) * maxSpd;
 
 
-
-velX += -velX * fric;
-
-
+if (onTheGround)
+{
+	velX += -velX * fric;
+}
+else 
+{
+	//less friction when in the air
+	velX += -velX * fric/1.25;
+}
 //Threshold for when the player should just not move
 if (abs(velX) < 0.01)
 	velX = 0;

@@ -1,18 +1,15 @@
 {
   "spriteId": {
-    "name": "sBugIdle",
-    "path": "sprites/sBugIdle/sBugIdle.yy",
+    "name": "sPipeWhip",
+    "path": "sprites/sPipeWhip/sPipeWhip.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sBlueIdle",
-    "path": "sprites/sBlueIdle/sBlueIdle.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oCreatureBase",
-    "path": "objects/oCreatureBase/oCreatureBase.yy",
+    "name": "oMelee",
+    "path": "objects/oMelee/oMelee.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,8 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -37,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBug",
+  "name": "oPipe",
   "tags": [],
   "resourceType": "GMObject",
 }
