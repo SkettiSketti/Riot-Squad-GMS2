@@ -10,5 +10,8 @@ function initCreature()
 	canWhip = true;
 	weapon = noone;
 	hurt = false;
+	hp = 100;
+	dead = false;
 	alarm[0] = 0; //For when the object is hurt
+	
 }

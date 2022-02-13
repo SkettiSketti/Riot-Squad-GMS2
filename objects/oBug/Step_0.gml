@@ -1,9 +1,7 @@
-
 var onTheGround = place_meeting(x,y + 1, oWall);
 
-
 //move slower down
-if (!onTheGround)
+if (!onTheGround && !dead)
 {
 	velY -= grav/3;
 	
@@ -22,7 +20,7 @@ if (!onTheGround)
 
 
 //Hop to player
-if (!hurt && onTheGround)
+if (!hurt && onTheGround && !dead)
 {
 	var dir;
 	var pow = random_range(5,10);
@@ -37,9 +35,9 @@ if (!hurt && onTheGround)
 	velX += dir * pow;
 	image_xscale = dir * 1;
 		
-		
+	//jump
 	y -= 1;
-	velY -= 4;
+	velY -= random_range(2,4);
 }
 
 
@@ -77,3 +75,7 @@ else
 	sprite_index = sBugIdle;
 }
 
+if (dead)
+{
+	sprite_index = sBugDefeat
+}

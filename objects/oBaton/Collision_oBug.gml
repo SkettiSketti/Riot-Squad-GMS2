@@ -1,3 +1,6 @@
+event_inherited()
+var hurtValue = irandom_range(minDmg,maxDmg);
+
 //if not hurt, then play the sound and stun protect
 if (!other.hurt)
 {
@@ -10,6 +13,7 @@ if (!other.hurt)
 	hurtNumber = instance_create_layer(x,y,"HurtNumber",oHurtNumber);
 	hurtNumber.xPos = x - 16
 	hurtNumber.yPos = y 
+	hurtNumber.num = hurtValue;
 
 
 }
@@ -17,4 +21,7 @@ if (!other.hurt)
 //knock back no matter what
 other.y -= 1;
 other.velX = other.velX + image_xscale * knockbackX;
-other.velY = -5;
+other.velY = -knockbackY;
+
+//Decrease Health 
+other.hp -= hurtValue

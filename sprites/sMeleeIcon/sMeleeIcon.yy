@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 59,
-  "bbox_top": 5,
+  "bbox_left": 2,
+  "bbox_right": 47,
+  "bbox_top": 2,
   "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
@@ -103,12 +103,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"eefd1df7-8c76-49f0-8c6a-31e9927ae940","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eefd1df7-8c76-49f0-8c6a-31e9927ae940","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},"LayerId":{"name":"44b9c6bd-bd32-4018-85a5-88397645fa6c","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sCreatureIcon","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},"resourceVersion":"1.0","name":"eefd1df7-8c76-49f0-8c6a-31e9927ae940","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c049d049-524d-4044-bb3c-a3db73dc446f","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c049d049-524d-4044-bb3c-a3db73dc446f","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},"LayerId":{"name":"042b681f-c16c-4131-b1c2-658be5bbe48f","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sMeleeIcon","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},"resourceVersion":"1.0","name":"c049d049-524d-4044-bb3c-a3db73dc446f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sCreatureIcon","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},
+    "spriteId": {"name":"sMeleeIcon","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -120,7 +120,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9d26c96b-9145-428e-9077-d6dc8c2e5e0d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eefd1df7-8c76-49f0-8c6a-31e9927ae940","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c3bd1614-c1ab-4155-b995-ab7aafef57d6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c049d049-524d-4044-bb3c-a3db73dc446f","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -137,14 +137,14 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sCreatureIcon","path":"sprites/sCreatureIcon/sCreatureIcon.yy",},
+    "parent": {"name":"sMeleeIcon","path":"sprites/sMeleeIcon/sMeleeIcon.yy",},
     "resourceVersion": "1.3",
-    "name": "sCreatureIcon",
+    "name": "sMeleeIcon",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"44b9c6bd-bd32-4018-85a5-88397645fa6c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"042b681f-c16c-4131-b1c2-658be5bbe48f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -152,7 +152,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sCreatureIcon",
+  "name": "sMeleeIcon",
   "tags": [],
   "resourceType": "GMSprite",
 }

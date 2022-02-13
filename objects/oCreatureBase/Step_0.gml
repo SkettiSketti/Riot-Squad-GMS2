@@ -1,5 +1,5 @@
 var onTheGround = place_meeting(x,y + 1, oWall);
-
+dead = (hp <= 0)
 
 if (hurt && onTheGround)
 {
@@ -61,4 +61,9 @@ if (instance_exists(weapon))
 		weapon.y = y
 		weapon.image_xscale = image_xscale;
 	}
+}
+
+if (dead)
+{
+	image_alpha = 0.5;
 }

@@ -54,3 +54,9 @@ else
 {
 	sprite_index = sBlueIdle;
 }
+
+
+if (dead)
+{
+	sprite_index = sBlueDefeat
+}
