@@ -1,54 +1,79 @@
+
 var onTheGround = place_meeting(x,y + 1, oWall);
-var xDir = keyboard_check(ord("D")) - keyboard_check(ord("A")) 
-
-//Move guy
-if (xDir != 0) 
-{
-	image_xscale = xDir;
-	velX += image_xscale * spd;
-}
 
 
+//move slower down
 if (!onTheGround)
 {
-	//apply gravity
-	velY += grav;
+	velY -= grav/3;
+	
+	var dir;
+	if (oPlayer.x > x)
+	{
+		dir = 1;
+	}
+	else 
+	{
+		dir = -1;
+	}
+	velX += dir * 0.25;
+	image_xscale = dir * 1;
 }
-else 
+
+
+//Hop to player
+if (!hurt && onTheGround)
 {
-	while place_meeting(x,y,oWall) y -= 1;
-	velY = 0;
+	var dir;
+	var pow = random_range(5,10);
+	if (oPlayer.x > x)
+	{
+		dir = 1;
+	}
+	else 
+	{
+		dir = -1;
+	}
+	velX += dir * pow;
+	image_xscale = dir * 1;
+		
+		
+	y -= 1;
+	velY -= 4;
 }
 
 
-
-x += velX;
-
-y += velY;
-
-//Limit speed
-if (abs(velX) > maxSpd)
-velX = sign(velX) * maxSpd;
-
-//Limit speed
-if (abs(velY) > maxSpd)
-velY = sign(velY) * maxSpd;
+event_inherited();
 
 
+//Within close proximity
+if (abs(oPlayer.x - x) < 16)
+{
+	/*
+	if (canWhip)
+	{
+		canWhip = false
+		weapon = instance_create_layer(x,y,"Instances",oBaton);
+	}
+	*/
+}
 
-velX += -velX * fric;
 
-
-//Threshold for when the player should just not move
-if (abs(velX) < 0.01)
-	velX = 0;
-
-
+//Animate
 if (hurt)
 {
 	sprite_index = sBugHurt;
+}
+else if (!onTheGround)
+{
+	sprite_index = sBugJump;
+}
+else if (abs(velX) > 1)
+{
+	sprite_index = sBugWalk;
 }
 else 
 {
 	sprite_index = sBugIdle;
 }
+

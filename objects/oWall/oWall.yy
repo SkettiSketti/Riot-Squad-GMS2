@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite4",
-    "path": "sprites/Sprite4/Sprite4.yy",
+    "name": "sWallIndicator",
+    "path": "sprites/sWallIndicator/sWallIndicator.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,0 +1,1 @@
+draw_text(xPos,yPos, "Ouch!");
