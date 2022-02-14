@@ -20,16 +20,25 @@ if (!other.hurt)
 		hurtNumber.num *= 2;
 	}
 
-	if (other.hp - hurtValue <= 0 && !other.dead)
-	{
-		if !audio_is_playing(sWoopWoop)
-			audio_play_sound(sWoopWoop,1,false);
-	}
 	
 	//knock back no matter what
 	other.y -= 1;
 	other.velX = other.velX + image_xscale * knockbackX;
 	other.velY = -knockbackY;
+	
+	//Killing blow!
+	if (other.hp - hurtValue <= 0 && !other.dead)
+	{
+		
+		other.fric = 0.025 //tiny friction to make them go flying
+		
+		//add more velocity
+		other.velX += other.velX + image_xscale * knockbackX;
+		other.velY += -knockbackY;
+		if !audio_is_playing(sWoopWoop)
+			audio_play_sound(sWoopWoop,1,false);
+			
+	}
 
 	//Decrease Health 
 	other.hp -= hurtValue
