@@ -44,20 +44,27 @@ if (!hurt && onTheGround && !dead)
 {
 	var dir;
 	var pow = random_range(5,10);
+	var moveOppositeWay = (irandom_range(1,6) == 1) // 1 in 6 chance to go the other way
 	if (oPlayer.x > x)
 	{
-		dir = 1;
+		dir = 1;	
 	}
 	else 
 	{
 		dir = -1;
 	}
+	
+	if (moveOppositeWay)
+	{
+		dir = -dir;
+	}
+	
 	velX += dir * pow;
 	image_xscale = sign(velX) * 1;
 		
 	//jump
 	y -= 1;
-	velY -= random_range(3,4);
+	velY -= random_range(2,4);
 }
 
 
