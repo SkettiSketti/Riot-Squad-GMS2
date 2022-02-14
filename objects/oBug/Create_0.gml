@@ -5,3 +5,5 @@
 event_inherited();
 
 hp = 80;
+fric = 0.05;
+spd = 0.25

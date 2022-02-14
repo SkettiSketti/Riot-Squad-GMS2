@@ -1,7 +1,7 @@
 var xDir = keyboard_check(vk_right) - keyboard_check(vk_left)
 var jump = keyboard_check_pressed(ord("X"));
 var whip = keyboard_check_pressed(ord("C"));
-var onTheGround = place_meeting(x,y + 1, oWall);
+onTheGround = place_meeting(x,y + 1, oWall);
 
 
 //Can whip (timer is done)

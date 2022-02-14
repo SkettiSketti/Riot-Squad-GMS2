@@ -7,8 +7,6 @@ if (!other.hurt)
 	other.hurt = true
 	other.alarm[0] = 45;
 	
-	if !audio_is_playing(sOuch)
-		audio_play_sound(sOuch,1,false);
 	//create hurt number and set it to current pos
 	hurtNumber = instance_create_layer(x,y,"HurtNumber",oHurtNumber);
 	hurtNumber.xPos = x - 16
@@ -18,12 +16,21 @@ if (!other.hurt)
 	{
 		hurtNumber.crit = true;
 		hurtNumber.num *= 2;
+		if !audio_is_playing(sShoot4)
+			audio_play_sound(sShoot4,1,false);
+	}
+	else 
+	{
+		
+		if !audio_is_playing(sOuch)
+			audio_play_sound(sOuch,1,false);
 	}
 
 	
 	//knock back no matter what
+	var dir = sign(x - oPlayer.x )
 	other.y -= 1;
-	other.velX = other.velX + image_xscale * knockbackX;
+	other.velX = other.velX + dir * knockbackX;
 	other.velY = -knockbackY;
 	
 	//Killing blow!

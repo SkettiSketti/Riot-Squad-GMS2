@@ -14,9 +14,29 @@ if (!onTheGround && !dead && !hurt)
 	{
 		dir = -1;
 	}
-	velX += dir * 0.25;
-	image_xscale = dir * 1;
+	//velX += dir * 0.25;
+	//image_xscale = dir * 1;
 }
+
+/*
+//Run towards player
+if (!hurt && onTheGround && !dead)
+{
+	var dir;
+	if (oPlayer.x > x)
+	{
+		dir = 1;
+	}
+	else 
+	{
+		dir = -1;
+	}
+	velX += dir * spd;
+	image_xscale = dir * 1;
+	
+	
+}
+*/
 
 
 //Hop to player
@@ -33,11 +53,11 @@ if (!hurt && onTheGround && !dead)
 		dir = -1;
 	}
 	velX += dir * pow;
-	image_xscale = dir * 1;
+	image_xscale = sign(velX) * 1;
 		
 	//jump
 	y -= 1;
-	velY -= random_range(2,4);
+	velY -= random_range(3,4);
 }
 
 
@@ -47,13 +67,17 @@ var attackRange = 32; //higher = more lenient
 //Within close proximity
 if (abs(oPlayer.x - x) < attackRange)
 {
-	
-	if (canWhip && !dead)
+
+	if (canWhip && !dead && !hurt)
 	{
+		
 		canWhip = false
 		sprite_index = sBugWhip;
-		weapon = instance_create_layer(x,y,"Instances",oPipe);
-		weapon.owner = id;
+		if (!instance_exists(weapon))
+		{
+			weapon = instance_create_layer(x,y,"Instances",oPipe);
+			weapon.owner = id;
+		}
 	}
 	
 }
