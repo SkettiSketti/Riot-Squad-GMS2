@@ -5,7 +5,7 @@ var hurtValue = irandom_range(minDmg,maxDmg);
 
 if (!other.hurt)
 {
-	other.alarm[0] = 30;
+	other.alarm[0] = 40;
 	other.hurt = true
 	
 	if !audio_is_playing(sOuch)
