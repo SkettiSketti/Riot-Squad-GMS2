@@ -1,6 +1,18 @@
 var onTheGround = place_meeting(x,y + 1, oWall);
 dead = (hp <= 0)
 
+if (x < 0)
+{
+	x = 0
+	velX = 0;
+}
+else if (x > 1364)
+{
+	x = 1364
+	velX = 0
+}
+
+
 if (hurt && onTheGround)
 {
 	velY = -velY;

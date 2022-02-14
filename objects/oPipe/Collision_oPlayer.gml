@@ -18,6 +18,12 @@ if (!other.hurt)
 
 	other.canWhip = false
 
+	if (other.hp - hurtValue <= 0 && !other.dead)
+	{
+		if !audio_is_playing(sWoopWoop)
+			audio_play_sound(sWoopWoop,1,false);
+	}
+	
 	//Decrease Health 
 	other.hp -= hurtValue
 
