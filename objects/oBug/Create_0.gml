@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-hp = 30;
+hp = 80;
