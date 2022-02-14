@@ -12,6 +12,7 @@ function initCreature()
 	hurt = false;
 	hp = 100;
 	dead = false;
+	onTheGround = false;
 	alarm[0] = 0; //For when the object is hurt
 	
 }
