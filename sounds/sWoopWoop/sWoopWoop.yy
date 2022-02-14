@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "oVyle_in_cube_sector.mp3",
-  "duration": 91.6636658,
+  "soundFile": "sWoopWoop.wav",
+  "duration": 0.75898,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oVyle_in_cube_sector",
+  "name": "sWoopWoop",
   "tags": [],
   "resourceType": "GMSound",
 }

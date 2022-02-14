@@ -43,9 +43,9 @@ if (!hurt && onTheGround && !dead)
 
 event_inherited();
 
-
+var attackRange = 32; //higher = more lenient
 //Within close proximity
-if (abs(oPlayer.x - x) < 16)
+if (abs(oPlayer.x - x) < attackRange)
 {
 	
 	if (canWhip && !dead)
