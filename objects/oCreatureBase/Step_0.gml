@@ -4,12 +4,12 @@ dead = (hp <= 0)
 if (x < 0)
 {
 	x = 0
-	velX = 0;
+	velX = -velX;
 }
 else if (x > 1364)
 {
 	x = 1364
-	velX = 0
+	velX = -velX;
 }
 
 

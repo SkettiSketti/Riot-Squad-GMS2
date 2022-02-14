@@ -10,12 +10,16 @@ if (!other.hurt)
 	
 	if !audio_is_playing(sOuch)
 		audio_play_sound(sOuch,1,false);
+		
+	/*
+	--Commented out because I want to only see player hurt number--
+	--it will also conflict with the number stack logic
 	//create hurt number and set it to current pos
 	hurtNumber = instance_create_layer(x,y,"HurtNumber",oHurtNumber);
 	hurtNumber.xPos = x - 16
 	hurtNumber.yPos = y 
 	hurtNumber.num = hurtValue;
-
+	*/
 	other.canWhip = false
 
 	if (other.hp - hurtValue <= 0 && !other.dead)
