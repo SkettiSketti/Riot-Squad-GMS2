@@ -13,11 +13,6 @@ else if (x > 1364)
 }
 
 
-if (hurt && onTheGround)
-{
-	velY = -velY;
-	velY -= 1;
-}
 
 //applyGravity(object_index,onTheGround,velY,grav) 
 
@@ -28,8 +23,22 @@ if (!onTheGround)
 }
 else 
 {
-	while place_meeting(x,y,oWall) y -= 1;
-	velY = 0;
+	
+	while place_meeting(x,y,oWall) 
+		y -= 1;
+	
+	//Bounce off ground
+	if ((dead || hurt) && onTheGround && velY > 1)
+	{
+		y -= 1;
+		velY = -velY/2;
+	}
+	else//Just stick to ground
+	{
+		velY = 0;
+	}
+
+	
 }
 
 

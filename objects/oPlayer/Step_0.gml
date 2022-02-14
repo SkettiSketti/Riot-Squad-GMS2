@@ -26,7 +26,7 @@ if (!dead && xDir != 0)
 
 
 //jump
-if (!dead && onTheGround && jump)
+if (!dead && onTheGround && jump && !hurt)
 {
 	y -= 1; //fixes bug where you need to be off the ground to jump
 	velY -= jumpHeight;

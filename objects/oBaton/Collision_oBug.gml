@@ -1,6 +1,6 @@
 event_inherited()
 var hurtValue = irandom_range(minDmg,maxDmg);
-
+var crit = false;
 //if not hurt, then play the sound and stun protect
 if (!other.hurt)
 {
@@ -14,7 +14,8 @@ if (!other.hurt)
 	hurtNumber.num = hurtValue;
 	if (irandom_range(1,10) < 3) //random crit
 	{
-		hurtNumber.crit = true;
+		crit = true;
+		hurtNumber.crit = crit;
 		hurtNumber.num *= 2;
 		if !audio_is_playing(sShoot4)
 			audio_play_sound(sShoot4,1,false);
@@ -26,12 +27,18 @@ if (!other.hurt)
 			audio_play_sound(sOuch,1,false);
 	}
 
-	
 	//knock back no matter what
 	var dir = sign(x - oPlayer.x )
+	var bonusKnockbackX = 0;
+	var bonusKnockbackY = 0;
+	if (crit) 
+	{
+		bonusKnockbackX = dir * knockbackX * 2;
+		bonusKnockbackY = knockbackY/2;
+	}
 	other.y -= 1;
-	other.velX = other.velX + dir * knockbackX;
-	other.velY = -knockbackY;
+	other.velX = other.velX + (dir * knockbackX) + bonusKnockbackX;
+	other.velY = -knockbackY - bonusKnockbackY;
 	
 	//Killing blow!
 	if (other.hp - hurtValue <= 0 && !other.dead)
