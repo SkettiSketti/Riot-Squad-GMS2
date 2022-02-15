@@ -20,7 +20,7 @@ if ( sqrt(power(abs(velX),2) + power(abs(velY),2)) > 6 && hurt)
 	var trail = instance_create_layer(x,y,"Trails",oTrail)
 	trail.x = x
 	trail.y = y
-	trail.image_blend = make_colour_hsv(random_range(125,255), random_range(125,255), random_range(125,255))
+	trail.image_blend = make_colour_rgb(random_range(0,255), random_range(0,255), random_range(0,255))
 	trail.sprite_index = sprite_index;
 	trail.image_xscale = image_xscale;
 
