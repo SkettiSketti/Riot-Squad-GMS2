@@ -21,8 +21,12 @@ if (!dead && whip && canWhip && sprite_index != sBlueWhip)
 //Move guy
 if (!dead && xDir != 0) 
 {
-	image_xscale = xDir;
-	velX += image_xscale * spd;
+	
+	if (canWhip)
+		image_xscale = xDir;
+	
+	
+	velX += xDir * spd;
 }
 
 
