@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"applyGravity","path":"scripts/applyGravity/applyGravity.yy",},"order":0,},
+    {"id":{"name":"sTrailIcon","path":"sprites/sTrailIcon/sTrailIcon.yy",},"order":19,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"sBlueDefeat","path":"sprites/sBlueDefeat/sBlueDefeat.yy",},"order":13,},
     {"id":{"name":"oBaton","path":"objects/oBaton/oBaton.yy",},"order":4,},
@@ -18,6 +19,7 @@
     {"id":{"name":"sSwipe","path":"sounds/sSwipe/sSwipe.yy",},"order":2,},
     {"id":{"name":"sBatonWhip","path":"sprites/sBatonWhip/sBatonWhip.yy",},"order":5,},
     {"id":{"name":"backgroundCity1","path":"sprites/backgroundCity1/backgroundCity1.yy",},"order":2,},
+    {"id":{"name":"oTrail","path":"objects/oTrail/oTrail.yy",},"order":10,},
     {"id":{"name":"sBlueJump","path":"sprites/sBlueJump/sBlueJump.yy",},"order":3,},
     {"id":{"name":"sBugIdle","path":"sprites/sBugIdle/sBugIdle.yy",},"order":6,},
     {"id":{"name":"sBlueWalk","path":"sprites/sBlueWalk/sBlueWalk.yy",},"order":0,},
