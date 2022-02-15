@@ -1,18 +1,15 @@
 {
   "spriteId": {
-    "name": "sBugIdle",
-    "path": "sprites/sBugIdle/sBugIdle.yy",
+    "name": "sEnemyIcon",
+    "path": "sprites/sEnemyIcon/sEnemyIcon.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sBlueIdle",
-    "path": "sprites/sBlueIdle/sBlueIdle.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oEnemyBase",
-    "path": "objects/oEnemyBase/oEnemyBase.yy",
+    "name": "oCreatureBase",
+    "path": "objects/oCreatureBase/oCreatureBase.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,9 +24,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -38,7 +35,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBug",
+  "name": "oEnemyBase",
   "tags": [],
   "resourceType": "GMObject",
 }

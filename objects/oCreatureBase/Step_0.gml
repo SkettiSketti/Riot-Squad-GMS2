@@ -1,3 +1,5 @@
+event_inherited()
+
 var onTheGround = place_meeting(x,y + 1, oWall);
 dead = (hp <= 0)
 

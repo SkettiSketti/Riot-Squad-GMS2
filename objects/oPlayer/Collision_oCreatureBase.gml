@@ -1,13 +1,17 @@
 var dir = (other.x - x)
 
-if (!oBug.dead)
+var pushback = 0.05;
+
+if (!other.dead)
 {
 	if (sign(dir) < 0)
 	{
-		velX += 0.2;
+		velX += pushback;
+		other.velX += -pushback;
 	}
 	else 
 	{
-		velX -= 0.2;
+		velX += -pushback;
+		other.velX += pushback;
 	}
 }

@@ -1,3 +1,5 @@
+event_inherited()
+
 //initCreature()
 spd = 0.5;
 fric = 0.1;
