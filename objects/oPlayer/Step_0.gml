@@ -11,6 +11,7 @@ if (!dead && whip && canWhip && sprite_index != sBlueWhip)
 	image_index = 0;
 	sprite_index = sBlueWhip;
 	
+	
 	weapon = instance_create_layer(x,y,"Instances",oBaton);
 	weapon.owner = id;
 	audio_play_sound(sSwipe,1,false);
