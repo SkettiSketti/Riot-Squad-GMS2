@@ -1,11 +1,33 @@
 var xDir = keyboard_check(vk_right) - keyboard_check(vk_left)
 var jump = keyboard_check_pressed(ord("X"));
 var whip = keyboard_check_pressed(ord("C"));
+var dash = keyboard_check_pressed(vk_shift);
 onTheGround = place_meeting(x,y + 1, oWall);
 
 
+if (dashing )
+{
+	createTrail();
+	velX += 3 * image_xscale;
+	velY = 0;; // cancel gravity
+	image_alpha = 0.5;
+}
+
+if (dash && !dashing && canDash)
+{
+	dashing = true;
+	canDash = false;
+	alarm[1] = 15; //dash timer
+	alarm[2] = dashCooldown; //dash cooldown	
+	if !audio_is_playing(sWoopWoop)
+			audio_play_sound(sWoopWoop,1,false);
+	 //cancel whip
+	
+	
+}
+
 //Can whip (timer is done)
-if (!dead && whip && canWhip && sprite_index != sBlueWhip)
+if (!dead && whip && canWhip && sprite_index != sBlueWhip && !dashing)
 {
 	canWhip = false;
 	image_index = 0;
@@ -19,10 +41,10 @@ if (!dead && whip && canWhip && sprite_index != sBlueWhip)
 
 
 //Move guy
-if (!dead && xDir != 0) 
+if (!dead && xDir != 0 && !dashing) 
 {
 	
-	if (canWhip)
+	if (canWhip ) //keep the player looking the same way when whipping and dashing
 		image_xscale = xDir;
 	
 	
@@ -31,7 +53,7 @@ if (!dead && xDir != 0)
 
 
 //jump
-if (!dead && onTheGround && jump && !hurt)
+if (!dead && onTheGround && jump && !hurt && !dashing)
 {
 	y -= 1; //fixes bug where you need to be off the ground to jump
 	velY -= jumpHeight;

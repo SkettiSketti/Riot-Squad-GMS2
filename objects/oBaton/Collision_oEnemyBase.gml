@@ -3,6 +3,7 @@ var crit = false;
 //if not hurt, then play the sound and stun protect
 if (!other.hurt)
 {
+	
 	other.hurt = true
 	other.alarm[0] = 45;
 	
@@ -13,9 +14,16 @@ if (!other.hurt)
 		hurtNumber.xPos = x - 16
 		hurtNumber.yPos = y 
 		hurtNumber.num = hurtValue;
+		
+		
+		//"Hitstop"
+		var t = current_time + 25;
+		while (current_time < t) { }
 	
 		if (irandom_range(1,10) < 3) //random crit
 		{
+			
+			
 			crit = true;
 			hurtNumber.crit = crit;
 			hurtNumber.num *= 2;
@@ -52,6 +60,11 @@ if (!other.hurt)
 	//Killing blow!
 	if (other.hp - hurtValue <= 0 && !other.dead)
 	{
+		
+		
+		//extra "Hitstop"
+		var t = current_time + 25;
+		while (current_time < t) { }
 		
 		other.fric = 0.025 //tiny friction to make them go flying
 		

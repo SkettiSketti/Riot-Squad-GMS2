@@ -1,7 +1,7 @@
 event_inherited()
 var hurtValue = irandom_range(minDmg,maxDmg);
 
-
+if (other.dashing) return; //Don't attack when he's dashing
 
 if (!other.hurt)
 {

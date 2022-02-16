@@ -1,4 +1,3 @@
-event_inherited()
-
+//Stun
 hurt = false;
 canWhip = true;
