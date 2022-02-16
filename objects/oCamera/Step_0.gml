@@ -9,8 +9,12 @@ var newY = lerp(curY, yCam, lerpIntensity);
 
 //var newX = xCam;
 //var newY = yCam;
-
 camera_set_view_pos(view_camera[0],newX,newY)
+
+
+xPos = camera_get_view_x(view_camera[0]);
+yPos = camera_get_view_y(view_camera[0]);
 
 //layer_x(layer_get_id("Background"), newX * backgroundLerp);
 //layer_y(layer_get_id("Background"), newY * backgroundLerp);
+

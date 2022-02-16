@@ -10,6 +10,7 @@ function initCreature()
 	canWhip = true;
 	weapon = noone;
 	hurt = false;
+	maxHp = 100;
 	hp = 100;
 	dead = false;
 	onTheGround = false;
