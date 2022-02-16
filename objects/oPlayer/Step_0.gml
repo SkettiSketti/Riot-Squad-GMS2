@@ -7,6 +7,14 @@ onTheGround = place_meeting(x,y + 1, oWall);
 
 if (dashing )
 {
+	if (instance_exists(weapon))
+	{
+		with(weapon)
+		{
+			instance_destroy();
+		}
+	}
+	
 	createTrail();
 	velX += 3 * image_xscale;
 	velY = 0;; // cancel gravity
