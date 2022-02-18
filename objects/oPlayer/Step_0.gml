@@ -27,8 +27,8 @@ if (dash && !dashing && canDash)
 	canDash = false;
 	alarm[1] = 15; //dash timer
 	alarm[2] = dashCooldown; //dash cooldown	
-	if !audio_is_playing(sWoopWoop)
-			audio_play_sound(sWoopWoop,1,false);
+	if !audio_is_playing(sDash2)
+			audio_play_sound(sDash2,1,false);
 	 //cancel whip
 	
 	
