@@ -74,7 +74,7 @@ if (!other.hurt)
 		other.velY += -knockbackY;
 		if !audio_is_playing(sWoopWoop)
 			audio_play_sound(sWoopWoop,1,false);
-		/*	
+		
 		for (var i = 0; i < 3; i++)
 		{
 			gold = instance_create_layer(x,y,"Instances",oGold);
@@ -83,7 +83,7 @@ if (!other.hurt)
 			gold.velX = knockbackX * image_xscale + random_range(-6,6);
 			gold.velY = -knockbackY;
 		}
-		*/
+		
 			
 	}
 	
