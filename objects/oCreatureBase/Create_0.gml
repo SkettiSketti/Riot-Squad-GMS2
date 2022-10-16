@@ -11,6 +11,7 @@ dead = false;
 dashing = false;
 canDash = true;
 dashCooldown = 60;
+goldOnHit = 3;
 alarm[0] = 0; //For when the object is hurt
 alarm[1] = 0; //For when the creature is dashing
 alarm[2] = 0; //For when the creature can dash again 
@@ -23,20 +24,6 @@ function checkIfDead()
 	dead = (hp <= 0)
 }
 
-function preventLeavingTheScreen()
-{
-	if (x < 0)
-	{
-		x = 0
-		velX = -velX;
-	}
-	else if (x > 1364)
-	{
-		x = 1364
-		velX = -velX;
-	}
-
-}
 
 function createTrail()
 {
@@ -84,5 +71,34 @@ function makeTransparentWhenDead()
 	if (dead)
 	{
 		image_alpha = 0.5;
+	}
+}
+
+function processGroundCollision(onTheGround)
+{
+	if (!onTheGround)
+	{
+		//apply gravity
+		velY += grav;
+	}
+	else 
+	{
+	
+		while place_meeting(x,y,oWall) 
+			y -= 1;
+	
+		
+		//Bounce off ground
+		if ((dead || hurt) && onTheGround && velY > 1)
+		{
+			y -= 1;
+			velY = -velY/2;
+		}
+		else//Just stick to ground
+		{
+			velY = 0;
+		}
+
+	
 	}
 }

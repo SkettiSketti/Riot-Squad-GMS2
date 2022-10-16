@@ -16,6 +16,7 @@ if (!other.hurt)
 		hurtNumber.num = hurtValue;
 		
 		
+		
 		//"Hitstop"
 		var t = current_time + 25;
 		while (current_time < t) { }
@@ -73,8 +74,32 @@ if (!other.hurt)
 		other.velY += -knockbackY;
 		if !audio_is_playing(sWoopWoop)
 			audio_play_sound(sWoopWoop,1,false);
+		/*	
+		for (var i = 0; i < 3; i++)
+		{
+			gold = instance_create_layer(x,y,"Instances",oGold);
+			gold.xPos = x
+			gold.yPos = y
+			gold.velX = knockbackX * image_xscale + random_range(-6,6);
+			gold.velY = -knockbackY;
+		}
+		*/
 			
 	}
+	
+	/*
+	if (!other.dead)
+	{
+		for (var i = 0; i < 3; i++)
+		{
+			gold = instance_create_layer(x,y,"Instances",oGold);
+			gold.xPos = x
+			gold.yPos = y
+			gold.velX = knockbackX * image_xscale + random_range(-6,6);
+			gold.velY = -knockbackY;
+		}
+	}
+	*/
 
 	//Decrease Health 
 	other.hp -= hurtValue

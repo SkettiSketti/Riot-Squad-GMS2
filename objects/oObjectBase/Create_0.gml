@@ -7,6 +7,22 @@ defaultGrav = 0.2;
 grav = 0.2;
 onTheGround = false;
 
+function preventLeavingTheScreen()
+{
+	if (x < 0)
+	{
+		x = 0
+		velX = -velX;
+	}
+	else if (x > 1364)
+	{
+		x = 1364
+		velX = -velX;
+	}
+
+}
+
+
 function applyVelocity()
 {
 	x += velX;
@@ -26,8 +42,9 @@ function processGroundCollision(onTheGround)
 		while place_meeting(x,y,oWall) 
 			y -= 1;
 	
+		
 		//Bounce off ground
-		if ((dead || hurt) && onTheGround && velY > 1)
+		if (onTheGround && velY > 1)
 		{
 			y -= 1;
 			velY = -velY/2;

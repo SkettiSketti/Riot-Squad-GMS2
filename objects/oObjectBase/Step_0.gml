@@ -5,3 +5,4 @@ applyVelocity();
 limitSpeed();
 applyFriction(onTheGround);
 applyThreshold();
+preventLeavingTheScreen()
