@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oFriendly",
-  "spriteId": null,
+  "spriteId": {
+    "name": "sFriendlyIcon",
+    "path": "sprites/sFriendlyIcon/sFriendlyIcon.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

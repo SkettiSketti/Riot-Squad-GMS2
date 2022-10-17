@@ -20,6 +20,11 @@ function processGroundCollision(onTheGround)
 		{
 			y -= 1;
 			velY = -velY*0.80;
+			
+			//Make sound
+			if !audio_is_playing(sPling1)
+				audio_play_sound(sPling1,1,false);
+			
 		}
 		else//Just stick to ground
 		{
