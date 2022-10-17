@@ -1,19 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGold",
-  "spriteId": {
-    "name": "goldDrops",
-    "path": "sprites/goldDrops/goldDrops.yy",
-  },
+  "name": "oPickup",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oPickup",
-    "path": "objects/oPickup/oPickup.yy",
+    "name": "oObjectBase",
+    "path": "objects/oObjectBase/oObjectBase.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,6 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oFriendly","path":"objects/oFriendly/oFriendly.yy",},},
   ],
   "properties": [],

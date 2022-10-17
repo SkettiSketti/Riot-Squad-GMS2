@@ -75,6 +75,7 @@ if (!other.hurt)
 		if !audio_is_playing(sWoopWoop)
 			audio_play_sound(sWoopWoop,1,false);
 		
+		//Spawn Gold on Kill
 		for (var i = 0; i < 3; i++)
 		{
 			gold = instance_create_layer(x,y,"Instances",oGold);
@@ -83,6 +84,13 @@ if (!other.hurt)
 			gold.velX = knockbackX * image_xscale + random_range(-6,6);
 			gold.velY = -knockbackY;
 		}
+		//Spawn Heart on Kill
+		heart = instance_create_layer(x,y,"Instances",oHeart);
+		heart.xPos = x
+		heart.yPos = y
+		heart.velX = knockbackX * image_xscale + random_range(-6,6);
+		heart.velY = -knockbackY;
+		
 		
 			
 	}

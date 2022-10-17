@@ -48,3 +48,31 @@ function destroyIfNotBouncing()
 		instance_destroy()
 	}
 }
+
+function magnetizeToNearestPlayer()
+{
+	player = instance_nearest(x,y,oPlayer);
+	
+	if (distance_to_object(player) < player.magnetRange)
+	{
+		if (x - player.x > 0)
+		{
+			velX -= player.magnetStrength;
+		}
+		else 
+		{
+			velX += player.magnetStrength;
+		}
+		
+		if (y - player.y > 0)
+		{
+			velY -= player.magnetStrength - grav;
+		}
+		else 
+		{
+			velY += player.magnetStrength + grav;
+		}
+		
+	}
+	
+}

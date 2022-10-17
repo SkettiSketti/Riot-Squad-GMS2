@@ -5,3 +5,4 @@
 // Inherit the parent event
 event_inherited();
 destroyIfNotBouncing()
+magnetizeToNearestPlayer()

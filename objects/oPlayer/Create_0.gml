@@ -1,7 +1,14 @@
 event_inherited();
-hp = 200 //override
-maxHp = 200
 
+//New
+
+magnetRange = 25
+magnetStrength = 0.25
+
+//Overides
+
+hp = 200
+maxHp = 200 
 dashBar = instance_create_layer(x,y-16,"HealthBar",oStaminaBarMini)
 dashBar.owner = id;
 

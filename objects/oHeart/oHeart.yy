@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGold",
+  "name": "oHeart",
   "spriteId": {
-    "name": "goldDrops",
-    "path": "sprites/goldDrops/goldDrops.yy",
+    "name": "heartDrops",
+    "path": "sprites/heartDrops/heartDrops.yy",
   },
   "solid": false,
   "visible": true,
