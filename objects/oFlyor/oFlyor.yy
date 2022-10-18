@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemyBase",
+  "name": "oFlyor",
   "spriteId": {
-    "name": "sEnemyIcon",
-    "path": "sprites/sEnemyIcon/sEnemyIcon.yy",
+    "name": "sFlyorFly",
+    "path": "sprites/sFlyorFly/sFlyorFly.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oCreatureBase",
-    "path": "objects/oCreatureBase/oCreatureBase.yy",
+    "name": "oEnemyBase",
+    "path": "objects/oEnemyBase/oEnemyBase.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,7 +30,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],

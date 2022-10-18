@@ -1,3 +1,3 @@
-
+//Hurt
 event_inherited();
 
