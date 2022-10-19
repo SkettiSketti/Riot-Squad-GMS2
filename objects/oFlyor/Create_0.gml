@@ -1,8 +1,14 @@
 event_inherited();
 grav = 0;
-spd = 0.35
-atkSpd = 0.5
-hp = 10
+spd = 0.30
+atkSpd = 0.43
+//atkSpd = 0.5
+maxHp = 30
+hp = maxHp
+minDmg = 6
+maxDmg = 7
+knockbackX = 20
+knockbackY = 3
 
 //Override
 function processGroundCollision(onTheGround)
@@ -88,7 +94,8 @@ function flyToPlayer()
 		grav = 0
 	}
 	
-	if (distance_to_object(oPlayer) > 50)
+	/*
+	if (abs(x - oPlayer.x) > 50)
 	{
 		//attack the player
 		if (x > oPlayer.x)
@@ -116,8 +123,22 @@ function flyToPlayer()
 				velX +=  atkSpd;
 		}
 	}
+	*/
+	
+	//attack the player
+	if (x > oPlayer.x)
+	{
+		if (-maxSpd < velX)
+			velX -=  spd;
+	}
+	else 
+	{
+		if (maxSpd > velX)
+			velX +=  spd;
+	}
+	
 	//If far away stay in the air
-	if (distance_to_object(oPlayer) > 50)
+	if (abs(x - oPlayer.x) > 10)
 	{
 		if (y > 220)
 		{
